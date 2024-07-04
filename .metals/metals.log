@@ -8602,3 +8602,473 @@ juil. 04, 2024 7:21:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancell
 AVERTISSEMENT: Unmatched cancel notification for request id 5226
 juil. 04, 2024 8:58:18 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFOS: Unsupported notification method: $/setTrace
+2024.07.04 21:12:42 WARN  Could not find semantic tokens for: file:///C:/Users/warsr/Documents/GitHub/scalaromainleguen/scalaromainleguen/src/main/scala/bush.scala
+2024.07.04 21:13:06 INFO  compiling scalaromainleguen (1 scala source)
+2024.07.04 21:13:06 INFO  time: compiled scalaromainleguen in 0.57s
+exception caught when loading class module-info: java.lang.AssertionError: assertion failed: attempt to parse java.lang.Object from classfile
+2024.07.04 21:13:10 INFO  compiling scalaromainleguen (1 scala source)
+2024.07.04 21:13:10 INFO  time: compiled scalaromainleguen in 0.35s
+exception caught when loading class module-info: java.lang.AssertionError: assertion failed: attempt to parse java.lang.Object from classfile
+2024.07.04 21:13:12 INFO  compiling scalaromainleguen (1 scala source)
+2024.07.04 21:13:12 INFO  time: compiled scalaromainleguen in 0.21s
+exception caught when loading class module-info: java.lang.AssertionError: assertion failed: attempt to parse java.lang.Object from classfile
+2024.07.04 21:13:14 INFO  compiling scalaromainleguen (7 scala sources)
+2024.07.04 21:13:15 WARN  Invalid text document uri received from build server: file:///C:/Users/warsr/Documents/GitHub/scalaromainleguen/scalaromainleguen/src/main/scala/WatorState.scala
+2024.07.04 21:13:15 INFO  time: compiled scalaromainleguen in 1.06s
+2024.07.04 21:13:21 INFO  Deduplicating compilation of scalaromainleguen from bsp client 'Metals 1.3.2' (since 50h 57m 54.766s)
+2024.07.04 21:13:21 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\warsr\Documents\GitHub\scalaromainleguen\.metals\dap-server.trace.json or C:\Users\warsr\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.07.04 21:13:21 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\warsr\Documents\GitHub\scalaromainleguen\.metals\dap-client.trace.json or C:\Users\warsr\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.07.04 21:13:21 INFO  Starting debug proxy for [scala.Main]
+2024.07.04 21:13:21 INFO  Loaded expression compiler in 0 milliseconds
+2024.07.04 21:13:21 INFO  Loaded step filter in 0 milliseconds
+2024.07.04 21:13:26 INFO  Loaded all sources and classes in 4 seconds
+2024.07.04 21:13:26 INFO  Initialized Scala 3 decoder in 520 milliseconds
+2024.07.04 21:13:26 INFO  Trying to attach to remote debuggee VM kubernetes.docker.internal:64491 .
+2024.07.04 21:13:26 INFO  Attaching to debuggee VM succeeded.
+juil. 04, 2024 9:13:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+AVERTISSEMENT: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "build/logMessage",
+  "params": {
+    "type": 1,
+    "message": "juil. 04, 2024 9:13:26 PM com.sun.javafx.application.PlatformImpl startup"
+  }
+}
+java.nio.file.InvalidPathException: Illegal char <:> at index 18: r_juil. 04, 2024 9:13:..._21-13-27-015.md
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at java.base/sun.nio.fs.WindowsPath.parse(WindowsPath.java:92)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:232)
+	at java.base/java.nio.file.Path.resolve(Path.java:515)
+	at scala.meta.internal.metals.StdReporter.reportPath(ReportContext.scala:165)
+	at scala.meta.internal.metals.StdReporter.create(ReportContext.scala:131)
+	at scala.meta.internal.builds.BspErrorHandler.createReport(BSPErrorHandler.scala:38)
+	at scala.meta.internal.builds.BspErrorHandler.onError(BSPErrorHandler.scala:22)
+	at scala.meta.internal.metals.clients.language.ForwardingMetalsBuildClient.onBuildLogMessage(ForwardingMetalsBuildClient.scala:136)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+juil. 04, 2024 9:13:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+AVERTISSEMENT: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "build/logMessage",
+  "params": {
+    "type": 1,
+    "message": "AVERTISSEMENT: Unsupported JavaFX configuration: classes were loaded from \u0027unnamed module @37d41f2\u0027"
+  }
+}
+java.nio.file.InvalidPathException: Illegal char <:> at index 15: r_AVERTISSEMENT: Unsup..._21-13-27-015.md
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at java.base/sun.nio.fs.WindowsPath.parse(WindowsPath.java:92)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:232)
+	at java.base/java.nio.file.Path.resolve(Path.java:515)
+	at scala.meta.internal.metals.StdReporter.reportPath(ReportContext.scala:165)
+	at scala.meta.internal.metals.StdReporter.create(ReportContext.scala:131)
+	at scala.meta.internal.builds.BspErrorHandler.createReport(BSPErrorHandler.scala:38)
+	at scala.meta.internal.builds.BspErrorHandler.onError(BSPErrorHandler.scala:22)
+	at scala.meta.internal.metals.clients.language.ForwardingMetalsBuildClient.onBuildLogMessage(ForwardingMetalsBuildClient.scala:136)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2024.07.04 21:14:03 INFO  compiling scalaromainleguen (3 scala sources)
+2024.07.04 21:14:03 INFO  time: compiled scalaromainleguen in 0.36s
+juil. 04, 2024 9:18:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 6060
+exception caught when loading class module-info: java.lang.AssertionError: assertion failed: attempt to parse java.lang.Object from classfile
+2024.07.04 21:19:56 INFO  compiling scalaromainleguen (1 scala source)
+2024.07.04 21:19:56 INFO  time: compiled scalaromainleguen in 0.17s
+juil. 04, 2024 9:20:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 6631
+2024.07.04 21:20:42 INFO  compiling scalaromainleguen (1 scala source)
+2024.07.04 21:20:42 INFO  time: compiled scalaromainleguen in 0.36s
+2024.07.04 21:22:03 INFO  Deduplicating compilation of scalaromainleguen from bsp client 'Metals 1.3.2' (since 51h 6m 37.397s)
+2024.07.04 21:22:03 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\warsr\Documents\GitHub\scalaromainleguen\.metals\dap-server.trace.json or C:\Users\warsr\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.07.04 21:22:03 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\warsr\Documents\GitHub\scalaromainleguen\.metals\dap-client.trace.json or C:\Users\warsr\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.07.04 21:22:04 INFO  Starting debug proxy for [scala.Main]
+2024.07.04 21:22:03 INFO  Loaded expression compiler in 0 milliseconds
+2024.07.04 21:22:03 INFO  Loaded step filter in 0 milliseconds
+2024.07.04 21:22:06 INFO  Loaded all sources and classes in 1 second
+2024.07.04 21:22:06 INFO  Initialized Scala 3 decoder in 376 milliseconds
+2024.07.04 21:22:06 INFO  Trying to attach to remote debuggee VM kubernetes.docker.internal:64737 .
+2024.07.04 21:22:06 INFO  Attaching to debuggee VM succeeded.
+juil. 04, 2024 9:22:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+AVERTISSEMENT: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "build/logMessage",
+  "params": {
+    "type": 1,
+    "message": "juil. 04, 2024 9:22:06 PM com.sun.javafx.application.PlatformImpl startup"
+  }
+}
+java.nio.file.InvalidPathException: Illegal char <:> at index 18: r_juil. 04, 2024 9:22:..._21-22-06-788.md
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at java.base/sun.nio.fs.WindowsPath.parse(WindowsPath.java:92)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:232)
+	at java.base/java.nio.file.Path.resolve(Path.java:515)
+	at scala.meta.internal.metals.StdReporter.reportPath(ReportContext.scala:165)
+	at scala.meta.internal.metals.StdReporter.create(ReportContext.scala:131)
+	at scala.meta.internal.builds.BspErrorHandler.createReport(BSPErrorHandler.scala:38)
+	at scala.meta.internal.builds.BspErrorHandler.onError(BSPErrorHandler.scala:22)
+	at scala.meta.internal.metals.clients.language.ForwardingMetalsBuildClient.onBuildLogMessage(ForwardingMetalsBuildClient.scala:136)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+juil. 04, 2024 9:22:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+AVERTISSEMENT: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "build/logMessage",
+  "params": {
+    "type": 1,
+    "message": "AVERTISSEMENT: Unsupported JavaFX configuration: classes were loaded from \u0027unnamed module @7c385a82\u0027"
+  }
+}
+java.nio.file.InvalidPathException: Illegal char <:> at index 15: r_AVERTISSEMENT: Unsup..._21-22-06-789.md
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at java.base/sun.nio.fs.WindowsPath.parse(WindowsPath.java:92)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:232)
+	at java.base/java.nio.file.Path.resolve(Path.java:515)
+	at scala.meta.internal.metals.StdReporter.reportPath(ReportContext.scala:165)
+	at scala.meta.internal.metals.StdReporter.create(ReportContext.scala:131)
+	at scala.meta.internal.builds.BspErrorHandler.createReport(BSPErrorHandler.scala:38)
+	at scala.meta.internal.builds.BspErrorHandler.onError(BSPErrorHandler.scala:22)
+	at scala.meta.internal.metals.clients.language.ForwardingMetalsBuildClient.onBuildLogMessage(ForwardingMetalsBuildClient.scala:136)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2024.07.04 21:22:34 INFO  Canceling debug proxy for [scala.Main]
+2024.07.04 21:22:34 INFO  Closing debug server tcp://0.0.0.0:64735
+2024.07.04 21:22:38 INFO  Closing debug server tcp://0.0.0.0:64488
+2024.07.04 21:22:38 INFO  Canceling debug proxy for [scala.Main]
+2024.07.04 21:23:00 INFO  compiling scalaromainleguen (1 scala source)
+2024.07.04 21:23:00 INFO  time: compiled scalaromainleguen in 0.33s
+2024.07.04 21:23:02 INFO  compiling scalaromainleguen (1 scala source)
+2024.07.04 21:23:02 INFO  time: compiled scalaromainleguen in 0.28s
+2024.07.04 21:23:10 INFO  Deduplicating compilation of scalaromainleguen from bsp client 'Metals 1.3.2' (since 51h 7m 44.508s)
+2024.07.04 21:23:10 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\warsr\Documents\GitHub\scalaromainleguen\.metals\dap-server.trace.json or C:\Users\warsr\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.07.04 21:23:10 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\warsr\Documents\GitHub\scalaromainleguen\.metals\dap-client.trace.json or C:\Users\warsr\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.07.04 21:23:11 INFO  Starting debug proxy for [scala.Main]
+2024.07.04 21:23:10 INFO  Loaded expression compiler in 1 millisecond
+2024.07.04 21:23:10 INFO  Loaded step filter in 0 milliseconds
+2024.07.04 21:23:12 INFO  Loaded all sources and classes in 1 second
+2024.07.04 21:23:12 INFO  Initialized Scala 3 decoder in 686 milliseconds
+2024.07.04 21:23:12 INFO  Trying to attach to remote debuggee VM kubernetes.docker.internal:64769 .
+2024.07.04 21:23:12 INFO  Attaching to debuggee VM succeeded.
+juil. 04, 2024 9:23:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+AVERTISSEMENT: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "build/logMessage",
+  "params": {
+    "type": 1,
+    "message": "juil. 04, 2024 9:23:13 PM com.sun.javafx.application.PlatformImpl startup"
+  }
+}
+java.nio.file.InvalidPathException: Illegal char <:> at index 18: r_juil. 04, 2024 9:23:..._21-23-13-579.md
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at java.base/sun.nio.fs.WindowsPath.parse(WindowsPath.java:92)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:232)
+	at java.base/java.nio.file.Path.resolve(Path.java:515)
+	at scala.meta.internal.metals.StdReporter.reportPath(ReportContext.scala:165)
+	at scala.meta.internal.metals.StdReporter.create(ReportContext.scala:131)
+	at scala.meta.internal.builds.BspErrorHandler.createReport(BSPErrorHandler.scala:38)
+	at scala.meta.internal.builds.BspErrorHandler.onError(BSPErrorHandler.scala:22)
+	at scala.meta.internal.metals.clients.language.ForwardingMetalsBuildClient.onBuildLogMessage(ForwardingMetalsBuildClient.scala:136)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+juil. 04, 2024 9:23:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+AVERTISSEMENT: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "build/logMessage",
+  "params": {
+    "type": 1,
+    "message": "AVERTISSEMENT: Unsupported JavaFX configuration: classes were loaded from \u0027unnamed module @7eb4df89\u0027"
+  }
+}
+java.nio.file.InvalidPathException: Illegal char <:> at index 15: r_AVERTISSEMENT: Unsup..._21-23-13-581.md
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at java.base/sun.nio.fs.WindowsPath.parse(WindowsPath.java:92)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:232)
+	at java.base/java.nio.file.Path.resolve(Path.java:515)
+	at scala.meta.internal.metals.StdReporter.reportPath(ReportContext.scala:165)
+	at scala.meta.internal.metals.StdReporter.create(ReportContext.scala:131)
+	at scala.meta.internal.builds.BspErrorHandler.createReport(BSPErrorHandler.scala:38)
+	at scala.meta.internal.builds.BspErrorHandler.onError(BSPErrorHandler.scala:22)
+	at scala.meta.internal.metals.clients.language.ForwardingMetalsBuildClient.onBuildLogMessage(ForwardingMetalsBuildClient.scala:136)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2024.07.04 21:23:37 INFO  Canceling debug proxy for [scala.Main]
+2024.07.04 21:23:37 INFO  Closing debug server tcp://0.0.0.0:64767
+2024.07.04 21:23:53 INFO  compiling scalaromainleguen (1 scala source)
+2024.07.04 21:23:53 INFO  time: compiled scalaromainleguen in 0.33s
+2024.07.04 21:23:55 INFO  Deduplicating compilation of scalaromainleguen from bsp client 'Metals 1.3.2' (since 51h 8m 29.615s)
+2024.07.04 21:23:56 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\warsr\Documents\GitHub\scalaromainleguen\.metals\dap-server.trace.json or C:\Users\warsr\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.07.04 21:23:56 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\warsr\Documents\GitHub\scalaromainleguen\.metals\dap-client.trace.json or C:\Users\warsr\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.07.04 21:23:56 INFO  Starting debug proxy for [scala.Main]
+2024.07.04 21:23:55 INFO  Loaded expression compiler in 1 millisecond
+2024.07.04 21:23:55 INFO  Loaded step filter in 0 milliseconds
+2024.07.04 21:23:57 INFO  Loaded all sources and classes in 1 second
+2024.07.04 21:23:57 INFO  Initialized Scala 3 decoder in 388 milliseconds
+2024.07.04 21:23:57 INFO  Trying to attach to remote debuggee VM kubernetes.docker.internal:64785 .
+2024.07.04 21:23:57 INFO  Attaching to debuggee VM succeeded.
+juil. 04, 2024 9:23:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+AVERTISSEMENT: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "build/logMessage",
+  "params": {
+    "type": 1,
+    "message": "juil. 04, 2024 9:23:58 PM com.sun.javafx.application.PlatformImpl startup"
+  }
+}
+java.nio.file.InvalidPathException: Illegal char <:> at index 18: r_juil. 04, 2024 9:23:..._21-23-58-181.md
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at java.base/sun.nio.fs.WindowsPath.parse(WindowsPath.java:92)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:232)
+	at java.base/java.nio.file.Path.resolve(Path.java:515)
+	at scala.meta.internal.metals.StdReporter.reportPath(ReportContext.scala:165)
+	at scala.meta.internal.metals.StdReporter.create(ReportContext.scala:131)
+	at scala.meta.internal.builds.BspErrorHandler.createReport(BSPErrorHandler.scala:38)
+	at scala.meta.internal.builds.BspErrorHandler.onError(BSPErrorHandler.scala:22)
+	at scala.meta.internal.metals.clients.language.ForwardingMetalsBuildClient.onBuildLogMessage(ForwardingMetalsBuildClient.scala:136)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+juil. 04, 2024 9:23:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+AVERTISSEMENT: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "build/logMessage",
+  "params": {
+    "type": 1,
+    "message": "AVERTISSEMENT: Unsupported JavaFX configuration: classes were loaded from \u0027unnamed module @7c385a82\u0027"
+  }
+}
+java.nio.file.InvalidPathException: Illegal char <:> at index 15: r_AVERTISSEMENT: Unsup..._21-23-58-181.md
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at java.base/sun.nio.fs.WindowsPath.parse(WindowsPath.java:92)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:232)
+	at java.base/java.nio.file.Path.resolve(Path.java:515)
+	at scala.meta.internal.metals.StdReporter.reportPath(ReportContext.scala:165)
+	at scala.meta.internal.metals.StdReporter.create(ReportContext.scala:131)
+	at scala.meta.internal.builds.BspErrorHandler.createReport(BSPErrorHandler.scala:38)
+	at scala.meta.internal.builds.BspErrorHandler.onError(BSPErrorHandler.scala:22)
+	at scala.meta.internal.metals.clients.language.ForwardingMetalsBuildClient.onBuildLogMessage(ForwardingMetalsBuildClient.scala:136)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2024.07.04 21:24:34 INFO  Canceling debug proxy for [scala.Main]
+2024.07.04 21:24:34 INFO  Closing debug server tcp://0.0.0.0:64783
+2024.07.04 21:24:35 INFO  Deduplicating compilation of scalaromainleguen from bsp client 'Metals 1.3.2' (since 51h 9m 9.404s)
+2024.07.04 21:24:35 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\warsr\Documents\GitHub\scalaromainleguen\.metals\dap-server.trace.json or C:\Users\warsr\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.07.04 21:24:35 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\warsr\Documents\GitHub\scalaromainleguen\.metals\dap-client.trace.json or C:\Users\warsr\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.07.04 21:24:35 INFO  Starting debug proxy for [scala.Main]
+2024.07.04 21:24:35 INFO  Loaded expression compiler in 0 milliseconds
+2024.07.04 21:24:35 INFO  Loaded step filter in 0 milliseconds
+2024.07.04 21:24:37 INFO  Loaded all sources and classes in 1 second
+2024.07.04 21:24:37 INFO  Initialized Scala 3 decoder in 425 milliseconds
+2024.07.04 21:24:37 INFO  Trying to attach to remote debuggee VM kubernetes.docker.internal:64800 .
+2024.07.04 21:24:37 INFO  Attaching to debuggee VM succeeded.
+juil. 04, 2024 9:24:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+AVERTISSEMENT: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "build/logMessage",
+  "params": {
+    "type": 1,
+    "message": "juil. 04, 2024 9:24:38 PM com.sun.javafx.application.PlatformImpl startup"
+  }
+}
+java.nio.file.InvalidPathException: Illegal char <:> at index 18: r_juil. 04, 2024 9:24:..._21-24-38-491.md
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at java.base/sun.nio.fs.WindowsPath.parse(WindowsPath.java:92)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:232)
+	at java.base/java.nio.file.Path.resolve(Path.java:515)
+	at scala.meta.internal.metals.StdReporter.reportPath(ReportContext.scala:165)
+	at scala.meta.internal.metals.StdReporter.create(ReportContext.scala:131)
+	at scala.meta.internal.builds.BspErrorHandler.createReport(BSPErrorHandler.scala:38)
+	at scala.meta.internal.builds.BspErrorHandler.onError(BSPErrorHandler.scala:22)
+	at scala.meta.internal.metals.clients.language.ForwardingMetalsBuildClient.onBuildLogMessage(ForwardingMetalsBuildClient.scala:136)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+juil. 04, 2024 9:24:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+AVERTISSEMENT: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "build/logMessage",
+  "params": {
+    "type": 1,
+    "message": "AVERTISSEMENT: Unsupported JavaFX configuration: classes were loaded from \u0027unnamed module @7c385a82\u0027"
+  }
+}
+java.nio.file.InvalidPathException: Illegal char <:> at index 15: r_AVERTISSEMENT: Unsup..._21-24-38-492.md
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at java.base/sun.nio.fs.WindowsPath.parse(WindowsPath.java:92)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:232)
+	at java.base/java.nio.file.Path.resolve(Path.java:515)
+	at scala.meta.internal.metals.StdReporter.reportPath(ReportContext.scala:165)
+	at scala.meta.internal.metals.StdReporter.create(ReportContext.scala:131)
+	at scala.meta.internal.builds.BspErrorHandler.createReport(BSPErrorHandler.scala:38)
+	at scala.meta.internal.builds.BspErrorHandler.onError(BSPErrorHandler.scala:22)
+	at scala.meta.internal.metals.clients.language.ForwardingMetalsBuildClient.onBuildLogMessage(ForwardingMetalsBuildClient.scala:136)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2024.07.04 21:25:41 INFO  Closing debug server tcp://0.0.0.0:64798
+2024.07.04 21:25:41 INFO  Canceling debug proxy for [scala.Main]
