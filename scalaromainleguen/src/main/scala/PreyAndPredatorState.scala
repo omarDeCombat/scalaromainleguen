@@ -58,19 +58,31 @@ final case class PreyAndPredatorState(prey:Prey,predator:Predator,map:Array[Arra
         val preyPosition = Position(prey.x, prey.y)
         val predatorPosition = Position(predator.x, predator.y)
 
-        val nextPredatorPosition = setNextMovePredator(predatorPosition, preyPosition)
+        var updatedPrey =prey.copy();
+        var updatedPredator =predator.copy();
 
-        val updatedPredator = predator.copy(x = nextPredatorPosition.x, y = nextPredatorPosition.y)
+        if(preyPosition != predatorPosition){
+            val nextPredatorPosition = setNextMovePredator(predatorPosition, preyPosition)
 
-        var updatedPrey = prey.direction match {
-            case 'z' => prey.copy(y = prey.y - 1) // Haut
-            case 'q' => prey.copy(x = prey.x - 1) // Gauche
-            case 's' => prey.copy(y = prey.y + 1) // Bas
-            case 'd' => prey.copy(x = prey.x + 1) // Droite
-            case _ => prey // Autres touches
+            updatedPredator = predator.copy(x = nextPredatorPosition.x, y = nextPredatorPosition.y)
+
+            updatedPrey = prey.direction match {
+                case 'z' => prey.copy(y = prey.y - 1) // Haut
+                case 'q' => prey.copy(x = prey.x - 1) // Gauche
+                case 's' => prey.copy(y = prey.y + 1) // Bas
+                case 'd' => prey.copy(x = prey.x + 1) // Droite
+                case _ => prey // Autres touches
+            }
+
+            updatedPrey = updatedPrey.copy(direction = ' ')
+        }
+        else{
+           updatedPredator = predator.copy(x = 40, y = 40)
+           updatedPrey = prey.copy(x = 10, y = 10)
         }
 
-        updatedPrey = updatedPrey.copy(direction = ' ')
+        
+
 
         copy(prey = updatedPrey, predator = updatedPredator)
     }
