@@ -1,3 +1,5 @@
+la branche main n'est pas bonne , il y as des branches dedier pour chaque exercice
+
 # scalaromainleguen
  
 # Systèmes multi-agents
