@@ -18,3 +18,24 @@ object Direction:
     case Direction.LEFT      => Direction.RIGHT
     case Direction.UPLEFT    => Direction.DOWNRIGHT
   }
+  def rightOf(direction: Direction): Direction = direction match {
+    case Direction.UP        => Direction.UPRIGHT
+    case Direction.UPRIGHT   => Direction.RIGHT
+    case Direction.RIGHT     => Direction.DOWNRIGHT
+    case Direction.DOWNRIGHT => Direction.DOWN
+    case Direction.DOWN      => Direction.DOWNLEFT
+    case Direction.DOWNLEFT  => Direction.LEFT
+    case Direction.LEFT      => Direction.UPLEFT
+    case Direction.UPLEFT    => Direction.UP
+  }
+
+  def leftOf(direction: Direction): Direction = direction match {
+    case Direction.UP        => Direction.UPLEFT
+    case Direction.UPRIGHT   => Direction.UP
+    case Direction.RIGHT     => Direction.UPRIGHT
+    case Direction.DOWNRIGHT => Direction.RIGHT
+    case Direction.DOWN      => Direction.DOWNRIGHT
+    case Direction.DOWNLEFT  => Direction.DOWN
+    case Direction.LEFT      => Direction.DOWNLEFT
+    case Direction.UPLEFT    => Direction.LEFT
+  }
