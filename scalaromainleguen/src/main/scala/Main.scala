@@ -12,6 +12,31 @@ import scala.util.Random
 import scalafx.scene.paint.Color
 import Direction._
 
+// object Main extends JFXApp3{
+// 	//Exo 1
+//   def contact[T](l1: List[T], l2: List[T]): List[T] = l1 match {
+//     case Nil => l2
+//     case head :: tail => head :: contact(tail, l2)
+//   }
+
+//   val l1 = List(1, 2, 3)
+//   val l2 = List(4, 5, 6)
+//   val contact = contact(l1, l2)
+//   println(contact)
+
+//   //Exo2
+//   // def max(l:List[Int]):Option[Int]{
+
+//   // }
+
+//   //Exo3
+//   def adition(l:List[Int]):Int{
+//     return 10 ;
+//   }//propose moi une implementation recurcive la plus simple possible en scala fonctionnel pour pour calculer la somme des elements  d'une list 
+
+
+// }
+
 object Main extends JFXApp3 {
 
   private val windowSize: Int = 500
