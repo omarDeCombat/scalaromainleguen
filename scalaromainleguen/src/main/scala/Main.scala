@@ -14,19 +14,19 @@ import Direction._
 
 object Main extends JFXApp3 {
 
-  private val windowSize: Int = 1000
+  private val windowSize: Int = 500
   val cellSize: Int = 10
-  val numberTuna: Int = 100
-  val numberShark: Int = 200
-  val sharkEnergie: Int = 3
-  val sharkBreed: Int = 2
-  val tunaBreed: Int = 20
+  val numberTuna: Int = 300
+  val numberShark: Int = 50
+  val sharkEnergie: Int = 6
+  val sharkBreed: Int = 18
+  val tunaBreed: Int = 4
+  val maxTunas: Int = 1000
+  val maxShark: Int = 1000
 
   override def start() = {
-    val random = new Random
-
-    val tunas: Array[Tuna] = generateTunas(numberTuna)
-    val sharks: Array[Shark] = generateSharks(numberShark)
+    val tunas: Vector[Tuna] = generateTunas(numberTuna)
+    val sharks: Vector[Shark] = generateSharks(numberShark)
 
     val watorState: ObjectProperty[WatorState] = ObjectProperty(WatorState(tunas, sharks))
 
@@ -47,15 +47,15 @@ object Main extends JFXApp3 {
       keyFrames = List(
         KeyFrame(
           time = Duration(100),
-          onFinished = _ => watorState.update(watorState.value.move(windowSize, cellSize,sharkBreed,tunaBreed,sharkEnergie))
+          onFinished = _ => watorState.update(watorState.value.move(windowSize, cellSize, sharkBreed, tunaBreed, sharkEnergie, maxTunas, maxShark))
         )
       )
       cycleCount = Timeline.Indefinite
     }.play()
   }
 
-  def generateTunas(n: Int): Array[Tuna] = {
-    Array.tabulate(n) { id =>
+  def generateTunas(n: Int): Vector[Tuna] = {
+    Vector.tabulate(n) { id =>
       Tuna(
         id = id,
         x = Random.nextInt(windowSize / cellSize),
@@ -68,8 +68,8 @@ object Main extends JFXApp3 {
     }
   }
 
-  def generateSharks(n: Int): Array[Shark] = {
-    Array.tabulate(n) { id =>
+  def generateSharks(n: Int): Vector[Shark] = {
+    Vector.tabulate(n) { id =>
       Shark(
         id = id,
         x = Random.nextInt(windowSize / cellSize),
